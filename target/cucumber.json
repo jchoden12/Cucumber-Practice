@@ -1,0 +1,90 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-05T03:58:29.493Z",
+        "line": 3,
+        "name": "Verify Login Page",
+        "description": "",
+        "id": "login-functionality-validation;verify-login-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2975093200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on Techfios website",
+            "match": {
+              "location": "LoginStepDefination.user_is_on_Techfios_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.sendKeys(Unknown Source)\r\n\tat pages.LoginPage.enterUserName(LoginPage.java:24)\r\n\tat stepDefination.LoginStepDefination.user_enters_username_as(LoginStepDefination.java:29)\r\n\tat ✽.user enters username as \"demo@Techfios.com\"(classpath:features/TechfiosLogin.feature:5)\r\n",
+              "duration": 10489000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user enters username as \"demo@Techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demo@Techfios.com\"",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginStepDefination.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 275500,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user enters password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginStepDefination.user_enters_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 183100,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user lands on Dashboard Page",
+            "match": {
+              "location": "LoginStepDefination.user_lands_on_Dashboard_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Scenario1"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality validation",
+    "description": "",
+    "id": "login-functionality-validation",
+    "keyword": "Feature",
+    "uri": "classpath:features/TechfiosLogin.feature",
+    "tags": []
+  }
+]
